@@ -215,7 +215,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:url(../fld.jpg);
+    background:url(img/fld.jpg);
     background-position: center;
     background-attachment: scroll;
     background-size:cover;
