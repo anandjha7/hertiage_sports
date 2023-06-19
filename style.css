@@ -423,6 +423,11 @@ section{
     outline-offset: 0rem;
 }
 
+.players .box-container .box:focus{
+    outline: var(--outline-focus);
+    outline-offset: 4rem;
+}
+
 .players .box-container .box img{
     margin:1rem 0;
     height: 25rem;
