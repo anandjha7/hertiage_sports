@@ -511,9 +511,31 @@ section{
     padding: 1rem 0;
     gap: 2rem 0;
 }
+.notice p{
+
+    text-align:left;
+    font-size: 2rem;
+}
+.notice p span{
+    color:red;
+}
 
         /* gallery start  */
+.gallery .box-container {
 
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    margin:auto;
+}
+.gallery .box-container .box{
+    padding: 3rem 2rem;
+    background:#fee1ec;
+    outline:black;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    margin: 2rem 1rem;
+}
 .gallery .box-container .box img{
     margin: 1rem 0;
     height: 25rem;
