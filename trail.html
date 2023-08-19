@@ -7,11 +7,11 @@
     <link rel="icon" type="image/x-icon" href="icon.jpg" >
     <link rel="stylesheet" href="style.css">
     <style>
-        
+
         body
         {
             background:url(flda.png);
-            display: flex; 
+            display: grid;  
             background-attachment:fixed;
             background-size:cover;
             padding-top: 75rem;
@@ -44,7 +44,7 @@
             top: 20rem;
             right:0%;
             left: 0%;
-            /* display: grid; */
+            /* display: grid;   */
         }
         .about .greet h1{
             text-align: center;
@@ -60,20 +60,7 @@
             font-size: 2.5rem;
             color: black;
         }
-        .about .link{
-            text-align: center;
-            font-size: 4.5rem;
-        }
-        .about .link h1{
-            text-align: center;
-            font-size: 4.5rem;
-        }
-        .about .link h3{
-            text-align: center;
-            font-size: 3rem;
-            color:black;
-        }
-        .link .content .heading{
+        .link {
             position:absolute;
             top: 410%;
             bottom: 0%;
@@ -82,22 +69,21 @@
             text-align:center;
             
         } 
-        .link1{
-            position:absolute;
-            top: 420%;
-            bottom: 0%;
-            right: 0%;
-            left: 0%;
+        .link p1{
             text-align:center;
+            font-size: 2rem;
+            padding: 1rem 0;
+            gap: 2rem 0;
         }
-        .link1 .box-container{
+
+        .link .box-container{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
             margin:auto;
             /* padding: 2px 2px 2px 2px; */
         }
 
-        .link1 .box-container .box{
+        .link .box-container .box{
             padding: 3rem 2rem;
             background:#fee1ec;
             outline:black;
@@ -106,19 +92,73 @@
             box-shadow: var(--box-shadow);
             margin: 2rem 1rem;
         }
-        .link1 .box-container .box:hover{
+        .link .box-container .box:hover{
             outline: var(--outline-hover);
             outline-offset: 0rem;
         }
 
-        .link1 .box-container .box h3{
+        .link .box-container .box h3{
             font-size:2rem;
             line-height: 2rem;
             color:var(--black);
             color:rgb(252, 3, 3);
         }
 
-        .link1 .box-container .box p{
+        .link .box-container .box p{
+            font-size:1.5rem;
+            line-height: 1.8rem;
+            color:var(--light-color);
+            padding: 1rem 0;
+        }
+        .contact{
+            position:absolute;
+            top: 460%;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;
+            text-align:center;
+        }
+        .contact p{
+            text-align:center;
+            font-size: 3rem;
+            padding: 1rem 0;
+            gap: 2rem 0;
+        }
+
+        .contact .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+            margin:auto;
+            /* padding: 2px 2px 2px 2px; */
+        }
+
+        .contact .box-container .box{
+            padding: 3rem 2rem;
+            background:#fee1ec;
+            outline:black;
+            outline-offset: -1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            margin: 2rem 1rem;
+        }
+        .contact .box-container .box:hover{
+            outline: var(--outline-hover);
+            outline-offset: 0rem;
+        }
+
+        .contact .box-container .box img{
+            margin:1rem 0;
+            height: 25rem;
+        }
+
+        .contact .box-container .box h3{
+            font-size:2rem;
+            line-height: 2rem;
+            color:var(--black);
+            color:rgb(252, 3, 3);
+        }
+
+        .contact .box-container .box p{
             font-size:1.5rem;
             line-height: 1.8rem;
             color:var(--light-color);
@@ -255,7 +295,6 @@
             <br>
             <h1>"please welcome our selector's"</h1>
         </div>
-
         <div class="box-container">
             <div class="box">
                 <img src="binod (1).jpg" alt="">
@@ -282,6 +321,7 @@
                 <a href="https://api.whatsapp.com/send?phone=916201371593" class="btn" target="_blank">contact</a> 
             </div>
         </div>
+        
 
         
     </section>
@@ -289,9 +329,7 @@
         <div class="content">
             <h1 class="heading"> <span>*** registration form ***</span> </h1>
         </div>
-       
-    </section>
-    <section class="link1">
+
         <div class="box-container">
             <div class="box">
                 <h3> undertaking </h3>
@@ -307,6 +345,40 @@
             </div>
         </div>
     </section>
+    <footer class="contact">
+        <h1 class="heading"> <span>***contact us***</span> </h1>
+        <p>
+            for any further information,you can contact here......
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <img src="ayush.jpeg" alt="">
+                <h3>Mr. aayush </h3>
+                <p>manager<br> heritage cricket team. </p>
+                <a href="https://api.whatsapp.com/send?phone=916203429875" class="btn" target="_blank">contact</a>
+            </div>
+            <div class="box">
+                <img src="anurag.png" alt="">
+                <h3>Mr. Anurag</h3>
+                 <p>volunteer (hitk) <br> heritage cricket team.</p>
+                 <a href="https://api.whatsapp.com/send?phone=919110024761" class="btn" target="_blank">contact</a>
+            </div>
+            <div class="box">
+                <img src="gulsh.png" alt="">
+                <h3>mr. gulshan</h3>
+                 <p>volunteer (bba) <br> heritage cricket team </p>
+                <a href="https://api.whatsapp.com/send?phone=918102030173" class="btn" target="_blank">contact</a> 
+            </div>
+            <div class="box">
+                <img src="avyaya3.png" alt="">
+                <h3>mr. avyaya</h3>
+                 <p>volunteer (bca) <br> heritage cricket team </p>
+                <a href="https://api.whatsapp.com/send?phone=917352346667" class="btn" target="_blank">contact</a> 
+            </div>
+        </div>
+       
+
+    </footer>
     
 </body>
 </html>
