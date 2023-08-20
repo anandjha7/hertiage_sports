@@ -1,0 +1,433 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college cricket trails</title>
+    <link rel="icon" type="image/x-icon" href="icon.jpg" >
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body
+        {
+            background:url(flda.png) fixed center/cover;
+            display: grid;  
+            background-attachment:fixed;
+            background-size:cover;
+            padding-top: 75rem;
+            padding-bottom: 10rem;  
+            /* padding-top: 5rem;
+            padding-bottom: 5rem;  */
+        }
+        .header .heading{
+            position:fixed;
+            top: 0; left: 0; right:0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            background:#fee1ec;
+            box-shadow: var(--box-shadow);
+        }
+        .home1{
+            position: absolute;
+            top: 10%;
+            right:0%;
+            left: 0%;
+            
+        }
+        .home1 .content .heading{
+            position:absolute;
+            right: 0%;
+            left: 30%;
+            text-align:center;
+            width: 60rem;
+        } 
+        .about{
+            position: absolute;
+            top: 20%;
+            right:0%;
+            left: 0%;
+            /* display: grid;   */
+        }
+        .about .greet h1{
+            text-align: center;
+            font-size: 4.5rem;
+        }
+        .about .greet h3{
+            text-align: center;
+            font-size: 3rem;
+            color:whitesmoke;
+        }
+        .about .greet p{
+            text-align: center;
+            font-size: 2.5rem;
+            color: black;
+        }
+        .link {
+            position:absolute;
+            top: 400%;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;  
+            text-align:center;
+            
+        } 
+        .link p1{
+            text-align:center;
+            font-size: 2rem;
+            padding: 1rem 0;
+            gap: 2rem 0;
+        }
+
+        .link .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+            margin:auto;
+            /* padding: 2px 2px 2px 2px; */
+        }
+
+        .link .box-container .box{
+            padding: 3rem 2rem;
+            background:#fee1ec;
+            outline:black;
+            outline-offset: -1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            margin: 2rem 1rem;
+        }
+        .link .box-container .box:hover{
+            outline: var(--outline-hover);
+            outline-offset: 0rem;
+        }
+
+        .link .box-container .box h3{
+            font-size:2rem;
+            line-height: 2rem;
+            color:var(--black);
+            color:rgb(252, 3, 3);
+        }
+
+        .link .box-container .box p{
+            font-size:1.5rem;
+            line-height: 1.8rem;
+            color:var(--light-color);
+            padding: 1rem 0;
+        }
+        .contact{
+            position:absolute;
+            top: 450%;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;
+            text-align:center;
+        }
+        .contact p{
+            text-align:center;
+            font-size: 3rem;
+            padding: 1rem 0;
+            gap: 2rem 0;
+        }
+
+        .contact .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+            margin:auto;
+            /* padding: 2px 2px 2px 2px; */
+        }
+
+        .contact .box-container .box{
+            padding: 3rem 2rem;
+            background:#fee1ec;
+            outline:black;
+            outline-offset: -1rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            margin: 2rem 1rem;
+        }
+        .contact .box-container .box:hover{
+            outline: var(--outline-hover);
+            outline-offset: 0rem;
+        }
+
+        .contact .box-container .box img{
+            margin:1rem 0;
+            height: 25rem;
+        }
+
+        .contact .box-container .box h3{
+            font-size:2rem;
+            line-height: 2rem;
+            color:var(--black);
+            color:rgb(252, 3, 3);
+        }
+
+        .contact .box-container .box p{
+            font-size:1.5rem;
+            line-height: 1.8rem;
+            color:var(--light-color);
+            padding: 1rem 0;
+        }
+        
+
+        /* Media query for tablets and smaller screens */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* Tablet styles */
+
+            .box-container {
+                padding: 3rem;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            /* Desktop styles */
+
+            .box-container {
+                gap: 3rem;
+            }
+
+            .box {
+                padding: 3rem;
+            }
+        }
+
+        /* Media query for smartphones */
+        
+        @media (max-width: 768px) {
+            /* Mobile styles */
+
+            body {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .header {
+                padding: 0.5rem;
+            }
+
+            .box-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .box {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <header class="header">
+            <h1 class="heading">  <marquee direction="right"
+                behavior="alternate"
+                style="border:#fee1ec 2px SOLID">
+                 college cricket trails 2023-24
+            </marquee>  </h1>
+        </header>
+    </header>
+    <section class="home1">
+        <div class="content">
+            <h1 class="heading"> <span>*** guidelines for trails ***</span> </h1>
+        </div>
+    </section>
+    <section class="about">
+        <div class="greet">
+
+           <h1>"Welcome to the Start of Your Cricket Journey!"</h1> 
+            <br>
+            <p>    
+                Dear Freshers,
+                A hearty welcome to the thrilling world of college cricket! As you step onto the field for trials, you're embarking on a journey that promises excitement, camaraderie, and personal growth. Remember, these trials are not just about showcasing your skills, but also about embracing the spirit of the game and the values it stands for.
+            </p>
+            <br>
+            <p>
+                Here's wishing you the best as you step up to the crease and take your first swings with the bat or unleash your spin or pace on the pitch. Embrace the nerves and turn them into determination to give your best. Here are a few greetings and motivational words to kickstart your college cricket trials:
+            </p> 
+            <br>  
+            <h3>
+                1. "Rise and Shine, Future Cricket Stars!🏏
+            </h3>
+            <br>
+            <p>
+                Welcome to the cricketing arena where dreams are forged and legends are born. May your talent shine brightly on this field and your passion drive you to excel. Best of luck!
+            </p>
+            <br>
+            <h3>
+                2. "Unleash Your Inner Champion!" 🏆
+            </h3>
+            <br>
+            <p>
+                As you step onto the pitch, remember that you're more than just players – you're potential champions. Play with heart, play with grit, and let your game speak for itself. Good luck, freshers!
+            </p>
+            <br>
+            <h3>
+                3. "The Journey Begins, Make It Count!" 🌟
+            </h3>
+            <br>
+            <p>
+                Your college cricket journey begins today. Each delivery, each boundary, and every wicket is a chance to showcase your skills. Play with dedication and leave your mark on the field. All the best!
+            </p>
+            <br>
+            <h3>
+                4. "Cricket is Your Canvas, Skill is Your Brush!" 🎨
+            </h3>
+            <br>
+            <p>
+                Consider this field your canvas and your cricketing skill the brush strokes. Paint a masterpiece with your performance, and let your passion create a work of art that the world will remember. May your trials be successful!
+            </p>
+            <br>
+            <h3>
+                5. "Fear the Fearless!" 💥
+            </h3>
+            <br>
+            <p>
+                Fear is just a word, but courage is your weapon. Step onto the pitch with confidence, let your passion guide you, and show everyone what a fearless cricketer looks like. Best wishes for your college cricket trials!
+            </p>
+            <br>
+            <h3>
+                6. "Boundaries are Waiting, Break Them!" 🚀
+            </h3>
+            <br>
+            <p>
+                In cricket, boundaries aren't just lines on the ground; they're challenges waiting to be conquered. Smash your way through every challenge that comes your way and let your determination prevail. Good luck, freshers!
+            </p>
+            <br>
+            <h3>
+                7. "Teamwork Makes the Dream Work!" 👥🏏
+            </h3>
+            <br>
+            <p>
+                Cricket is not just about individual brilliance; it's about teamwork and collaboration. Support your teammates, communicate effectively, and let the synergy lead you to success. Wishing you a fantastic trial experience!
+            </p>
+            <br>
+            <h3>
+                8. "Sweat, Sacrifice, Success!" 💪🏼🏆
+            </h3>
+            <br>
+            <p>
+                Success in cricket demands dedication, sacrifice, and tons of hard work. Embrace the sweat, push your limits, and remember that every effort you put in will take you one step closer to your goals. Best of luck!
+            </p>
+            <br>
+            <h3>
+                9. "Chase Your Passion, Not Perfection!" 🌟
+            </h3>
+            <br>
+            <p>
+                As you step onto the field, focus on the joy of playing and the love for the game. Don't chase perfection; chase your passion, and success will follow. May your trials be filled with joy and memorable moments!
+            </p>
+            <br>
+            <h3>
+                10. "May Your Shots Find Gaps and Your Yorkers Find Stumps!" 🎯🏏
+            </h3>
+            <br>
+            <p>
+                As you wield the bat or unleash your bowling prowess, may your shots find gaps in the field and your deliveries hit the stumps accurately. Make each shot and ball count. All the best for your college cricket trials!
+            </p>
+            <br>
+            <p>
+                Remember, this is just the beginning. College cricket has much in store for you – friendships, victories, lessons, and growth. Enjoy every moment, learn from every experience, and relish the journey ahead.
+            </p>
+            <br>
+            <p>
+                Remember, this is just the beginning. College cricket has much in store for you – friendships, victories, lessons, and growth. Enjoy every moment, learn from every experience, and relish the journey ahead.
+            </p>
+            <br>
+            <br>
+            <br>
+            <h3>
+                Warm regards,
+                <br>
+                Heritage Cricket Team...!!!
+            </h3>  
+            <br>
+            <br>
+            <h1>"please welcome our selector's"</h1>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="binod (1).jpg" alt="">
+                <h3>Mr. Binod Patra </h3>
+                <p>head coach <br> heritage cricket team. </p>
+                <a href="mailto:sportsheritage49@gmail.com" class="btn" target="_blank">contact</a>
+            </div>
+            <div class="box">
+                <img src="anish.jpg" alt="">
+                <h3>Mr. Anish singh</h3>
+                 <p>assistant head coach <br> heritage cricket team.</p>
+                <a href="mailto:sportsheritage49@gmail.com" class="btn" target="_blank">contact</a> 
+            </div>
+            <div class="box">
+                <img src="sre.jpg" alt="">
+                <h3>Sreyansh Pratap Singh</h3>
+                 <p>captain <br> heritage cricket team </p>
+                <a href="https://api.whatsapp.com/send?phone=918617293939" class="btn" target="_blank">contact</a> 
+            </div>
+            <div class="box">
+                <img src="anand.jpg" alt="">
+                <h3>anand kumar jha</h3>
+                 <p>vice-captain <br> heritage cricket team </p>
+                <a href="https://api.whatsapp.com/send?phone=916201371593" class="btn" target="_blank">contact</a> 
+            </div>
+        </div>
+        
+
+        
+    </section>
+    <section class="link">
+        <div class="content">
+            <h1 class="heading"> <span>*** registration form ***</span> </h1>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <h3> undertaking </h3>
+                <p>download the <br> undertaking from Here. </p>
+                <a href="https://drive.google.com/file/d/1Yjtyl5WNbsge9a6gB7nC8drgBZjqhrdD/view?usp=drive_link" class="btn" target="_blank">download</a>
+            </div>
+            <br>
+            <br>
+            <div class="box">
+                <h3> registration form </h3>
+                <p>click here <br> to fill the form . </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-CHuTBitVwC68d6CPRvfuN6Nvyjf82ghkM1F645cJ51kyYw/viewform?usp=sf_link" class="btn" target="_blank">register</a>
+            </div>
+        </div>
+    </section>
+    <footer class="contact">
+        <h1 class="heading"> <span>***contact us***</span> </h1>
+        <p>
+            for any further information,you can contact here......
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <img src="ayush.jpeg" alt="">
+                <h3>Mr. aayush </h3>
+                <p>manager<br> heritage cricket team. </p>
+                <a href="https://api.whatsapp.com/send?phone=916203429875" class="btn" target="_blank">contact</a>
+            </div>
+            <div class="box">
+                <img src="anurag.png" alt="">
+                <h3>Mr. Anurag</h3>
+                 <p>volunteer (hitk) <br> heritage cricket team.</p>
+                 <a href="https://api.whatsapp.com/send?phone=919110024761" class="btn" target="_blank">contact</a>
+            </div>
+            <div class="box">
+                <img src="gulsh.png" alt="">
+                <h3>mr. gulshan</h3>
+                 <p>volunteer (bba) <br> heritage cricket team </p>
+                <a href="https://api.whatsapp.com/send?phone=918102030173" class="btn" target="_blank">contact</a> 
+            </div>
+            <div class="box">
+                <img src="avyaya3.png" alt="">
+                <h3>mr. avyaya</h3>
+                 <p>volunteer (bca) <br> heritage cricket team </p>
+                <a href="https://api.whatsapp.com/send?phone=917352346667" class="btn" target="_blank">contact</a> 
+            </div>
+        </div>
+       
+
+    </footer>
+    
+</body>
+</html> -->
